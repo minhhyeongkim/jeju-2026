@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 제주 가족여행 — 맛집</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">🌊 제주 2026</div>
+    <div class="nav-links">
+      <a href="index.html">📅 일정</a>
+      <a href="checklist.html">✅ 준비물</a>
+      <a href="restaurants.html" class="active">🍽️ 맛집</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <h1>🍽️ 맛집 리스트</h1>
+    <p>민형 큐레이션 제주 맛집 모음</p>
+  </div>
+
+  <!-- 필터 탭 -->
+  <div class="filter-tabs">
+    <button class="tab-btn active" data-filter="all">전체</button>
+    <button class="tab-btn" data-filter="morning">🌅 아침</button>
+    <button class="tab-btn" data-filter="lunch">☀️ 점심</button>
+    <button class="tab-btn" data-filter="dinner-meat">🥩 저녁(고기)</button>
+    <button class="tab-btn" data-filter="dinner-seafood">🐟 저녁(회)</button>
+    <button class="tab-btn" data-filter="cafe">☕ 카페</button>
+    <button class="tab-btn" data-filter="airport">✈️ 공항근처</button>
+  </div>
+
+  <!-- 아침 -->
+  <div class="restaurant-card" data-category="morning">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">소색채본</div>
+      <div class="badges">
+        <span class="badge badge-category">아침</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 113 · 산방산 근처</span>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">🕐</span>
+      <span>09:00~</span>
+    </div>
+    <div class="restaurant-note">베이커리·카페, 산방산 뷰. 아침 식사 후보.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="morning">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">제주할망밥상 산방산점</div>
+      <div class="badges">
+        <span class="badge badge-category">아침</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>산방산 근처</span>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">🕐</span>
+      <span>09:00~</span>
+    </div>
+    <div class="restaurant-note">생선구이 백반. 한식 아침 식사.</div>
+  </div>
+
+  <!-- 점심 -->
+  <div class="restaurant-card" data-category="lunch">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">순천미향 제주산방산본점</div>
+      <div class="badges">
+        <span class="badge badge-reservation">예약 권장</span>
+        <span class="badge badge-category">점심</span>
+      </div>
+    </div>
+    <div class="restaurant-rating">⭐ 4.4</div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 163-6</span>
+    </div>
+    <div class="restaurant-detail closed">
+      <span class="icon">🚫</span>
+      <span>월·화 휴무</span>
+    </div>
+    <div class="restaurant-note">문어·전복·흑돼지 전골, 산방산 뷰. 주말 웨이팅 있음 — 사전 예약 권장.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="lunch">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">산방산국수맛집</div>
+      <div class="badges">
+        <span class="badge badge-category">점심</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 142-1</span>
+    </div>
+    <div class="restaurant-note">고기국수 전문. 숙소 근처.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="lunch">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">사계바다 통갈치조림구이 제주산방산점</div>
+      <div class="badges">
+        <span class="badge badge-category">점심</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 2147-13 1층</span>
+    </div>
+    <div class="restaurant-note">순살갈치조림 + 통갈치구이 세트. 제철 갈치 요리.</div>
+  </div>
+
+  <!-- 저녁 (고기) -->
+  <div class="restaurant-card" data-category="dinner-meat">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">사계흑돼지 산방산본점</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(고기)</span>
+      </div>
+    </div>
+    <div class="restaurant-rating">⭐ 4.9</div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 933-3 1층 · 숙소 차 2분·도보 가능</span>
+    </div>
+    <div class="restaurant-note">정원 있음, 리뷰 극찬. 숙소 도보 거리.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="dinner-meat">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">하이숙성</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(고기)</span>
+      </div>
+    </div>
+    <div class="restaurant-rating">⭐ 5.0</div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 · 도보 가능</span>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📞</span>
+      <span>050-71468-2347</span>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">🕐</span>
+      <span>~22:00</span>
+    </div>
+    <div class="restaurant-note">숙성 흑돼지 전문. 평점 5.0 최고점.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="dinner-meat">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">산방산 우리동네 숯불갈비</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(고기)</span>
+      </div>
+    </div>
+    <div class="restaurant-rating">⭐ 4.7</div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리</span>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📞</span>
+      <span>050-71476-0296</span>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">🕐</span>
+      <span>11:00~22:00</span>
+    </div>
+    <div class="restaurant-note">로컬 분위기, 갈비 전문.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="dinner-meat">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">덕수아이흑돼지</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(고기)</span>
+      </div>
+    </div>
+    <div class="restaurant-rating">⭐ 4.5</div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면</span>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📞</span>
+      <span>064-794-8293</span>
+    </div>
+    <div class="restaurant-detail closed">
+      <span class="icon">🚫</span>
+      <span>화요일 휴무 · 11:00~23:00</span>
+    </div>
+    <div class="restaurant-note">200g 단위 주문 가능.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="dinner-meat">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">둣통 제주산방산본점</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(고기)</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 1036</span>
+    </div>
+    <div class="restaurant-note">야외 조명 분위기 좋음. 저녁 고기 후보.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="dinner-meat">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">팔미돈가 산방산본점</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(고기)</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 875 1동</span>
+    </div>
+    <div class="restaurant-note">돼지고기구이 전문.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="dinner-meat">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">고기덕후 모슬포점</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(고기)</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 대정읍 상모리 3319</span>
+    </div>
+    <div class="restaurant-note">육류·고기요리 전문점.</div>
+  </div>
+
+  <!-- 저녁 (회) -->
+  <div class="restaurant-card" data-category="dinner-seafood">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">모슬포선주협 회센터</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(회)</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>모슬포항</span>
+    </div>
+    <div class="restaurant-note">수협 직영, 포장 가능. 7월 한치·갈치 제철. 1일차 저녁 후보.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="dinner-seafood">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">제주회포장</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(회)</span>
+      </div>
+    </div>
+    <div class="restaurant-rating">⭐ 4.7</div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>제주시</span>
+    </div>
+    <div class="restaurant-detail closed">
+      <span class="icon">🚫</span>
+      <span>화요일 휴무 · 15:00 오픈</span>
+    </div>
+    <div class="restaurant-note">수조에서 바로 썰어줌. 포장 가능.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="dinner-seafood">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">미영이네</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(회)</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 대정읍 하모리 770-29</span>
+    </div>
+    <div class="restaurant-note">고등어회 전문.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="dinner-seafood">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">부두식당</div>
+      <div class="badges">
+        <span class="badge badge-category">저녁(회)</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 대정읍 하모리 770-9</span>
+    </div>
+    <div class="restaurant-note">생선회 전문.</div>
+  </div>
+
+  <!-- 카페·디저트 -->
+  <div class="restaurant-card" data-category="cafe">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">투머치파이</div>
+      <div class="badges">
+        <span class="badge badge-category">카페</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 덕수리 2334</span>
+    </div>
+    <div class="restaurant-note">네덜란드 출신 사장님이 구워주는 미트파이. 독특한 맛집.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="cafe">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">패스브루</div>
+      <div class="badges">
+        <span class="badge badge-category">카페</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 3191</span>
+    </div>
+    <div class="restaurant-note">드립커피 맛집.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="cafe">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">테라스사계</div>
+      <div class="badges">
+        <span class="badge badge-category">카페</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 126-1 105호</span>
+    </div>
+    <div class="restaurant-note">숙소 근처 대형카페.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="cafe">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">코데인커피로스터스 산방산점</div>
+      <div class="badges">
+        <span class="badge badge-category">카페</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>서귀포시 안덕면 사계리 2880-3</span>
+    </div>
+    <div class="restaurant-note">로스터리 카페.</div>
+  </div>
+
+  <!-- 공항 근처 -->
+  <div class="restaurant-card" data-category="airport">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">제주부엌 고기국수 제주공항점</div>
+      <div class="badges">
+        <span class="badge badge-category">공항근처</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>제주시 노형동 941 2층</span>
+    </div>
+    <div class="restaurant-note">공항 근처 고기국수. 1일차 점심·3일차 마지막 식사 후보.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="airport">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">황해식당 제주공항 갈치</div>
+      <div class="badges">
+        <span class="badge badge-category">공항근처</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>제주시 이호이동 174-2</span>
+    </div>
+    <div class="restaurant-note">갈치조림 전문. tvN 짠내투어 방영.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="airport">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">논짓물식당</div>
+      <div class="badges">
+        <span class="badge badge-category">공항근처</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>제주시 용담이동 935-17</span>
+    </div>
+    <div class="restaurant-note">유튜브 방영 향토 맛집.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="airport">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">몰래물밥상 공항점</div>
+      <div class="badges">
+        <span class="badge badge-category">공항근처</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>제주시 도두일동 2618-12</span>
+    </div>
+    <div class="restaurant-note">바다 뷰 향토음식.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="airport">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">성심조림 제주공항점</div>
+      <div class="badges">
+        <span class="badge badge-category">공항근처</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>제주시 연동 260-5 1층</span>
+    </div>
+    <div class="restaurant-note">공항 근처 한식.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="airport">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">섬누들</div>
+      <div class="badges">
+        <span class="badge badge-category">공항근처</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>제주시 연동 1934-3</span>
+    </div>
+    <div class="restaurant-note">국수 전문.</div>
+  </div>
+
+  <div class="restaurant-card" data-category="airport">
+    <div class="restaurant-card-header">
+      <div class="restaurant-name">오병장</div>
+      <div class="badges">
+        <span class="badge badge-category">공항근처</span>
+      </div>
+    </div>
+    <div class="restaurant-detail">
+      <span class="icon">📍</span>
+      <span>제주시 삼양삼동 2508</span>
+    </div>
+    <div class="restaurant-note">한식.</div>
+  </div>
+
+  <!-- 7월 제철 어종 -->
+  <div class="seasonal-card">
+    <div class="seasonal-title">🐠 7월 제주 제철 어종</div>
+    <div class="fish-grid">
+      <div class="fish-item">
+        <div class="fish-name">한치 (화살오징어)</div>
+        <div class="fish-desc">7월 피크. 달고 쫄깃. 물회·회 모두 가능.</div>
+      </div>
+      <div class="fish-item">
+        <div class="fish-name">갈치</div>
+        <div class="fish-desc">은갈치 제철 6~8월. 기름지고 담백.</div>
+      </div>
+      <div class="fish-item">
+        <div class="fish-name">자리돔</div>
+        <div class="fish-desc">6~8월 토종 어종. 물회 추천.</div>
+      </div>
+      <div class="fish-item">
+        <div class="fish-name">돌돔</div>
+        <div class="fish-desc">여름 고급 어종.</div>
+      </div>
+      <div class="fish-item">
+        <div class="fish-name">광어</div>
+        <div class="fish-desc">연중 안정적. 모듬회 기본.</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>2026 제주도 가족여행</span> · 맛있게 먹자! 🍜
+</footer>
+
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+  const cards = document.querySelectorAll('.restaurant-card');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function() {
+      tabs.forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+
+      const filter = this.dataset.filter;
+      cards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

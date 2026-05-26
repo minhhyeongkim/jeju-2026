@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 제주 가족여행 — 준비물</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">🌊 제주 2026</div>
+    <div class="nav-links">
+      <a href="index.html">📅 일정</a>
+      <a href="checklist.html" class="active">✅ 준비물</a>
+      <a href="restaurants.html">🍽️ 맛집</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <h1>✅ 준비물 체크리스트</h1>
+    <p>항목을 터치하면 체크됩니다. 새로고침해도 유지돼요.</p>
+  </div>
+
+  <!-- 진행률 -->
+  <div class="progress-container">
+    <div class="progress-header">
+      <span class="progress-title">전체 진행률</span>
+      <span class="progress-count" id="progressCount">0 / 0 완료</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <div style="text-align:right; margin-top:10px;">
+      <button class="reset-btn" id="resetBtn">🔄 전체 초기화</button>
+    </div>
+  </div>
+
+  <!-- 1. 여행 서류·예약 -->
+  <div class="checklist-section" id="section-docs">
+    <div class="checklist-section-header">
+      <span class="icon">📋</span> 여행 서류·예약
+    </div>
+    <div class="checklist-items">
+      <label class="checklist-item" data-key="docs-0">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">신분증 (전원)</span>
+      </label>
+      <label class="checklist-item" data-key="docs-1">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">항공권 확인 (서울팀 김포 / 부산팀 김해)</span>
+      </label>
+      <label class="checklist-item" data-key="docs-2">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">렌터카 예약 확인서 (추가 운전자 등록 여부 확인)</span>
+      </label>
+      <label class="checklist-item" data-key="docs-3">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">숙소 예약 확인서 (제주살랑)</span>
+      </label>
+      <label class="checklist-item" data-key="docs-4">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">9.81파크 앱 다운로드 + 안전 영상 사전 시청</span>
+      </label>
+      <label class="checklist-item" data-key="docs-5">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">예나르 공예박물관 사전 전화 확인 (064-772-4280)</span>
+      </label>
+      <label class="checklist-item" data-key="docs-6">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">순천미향 or 점심 식당 예약 (주말 웨이팅 대비)</span>
+      </label>
+      <label class="checklist-item" data-key="docs-7">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">사계흑돼지 식당 예약 확인</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- 2. 의류·신발 -->
+  <div class="checklist-section" id="section-clothes">
+    <div class="checklist-section-header">
+      <span class="icon">👕</span> 의류·신발
+    </div>
+    <div class="checklist-items">
+      <label class="checklist-item" data-key="clothes-0">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">여름 옷 (3일치) — 7월 제주 낮 최고 30°C 전후</span>
+      </label>
+      <label class="checklist-item" data-key="clothes-1">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">가벼운 긴팔 or 카디건 (에어컨·저녁 대비)</span>
+      </label>
+      <label class="checklist-item" data-key="clothes-2">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">편한 운동화 (9.81파크, 오름 이동)</span>
+      </label>
+      <label class="checklist-item" data-key="clothes-3">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">샌들 or 슬리퍼 (숙소·온천)</span>
+      </label>
+      <label class="checklist-item" data-key="clothes-4">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">우비 or 접이식 우산 (7월 장마철)</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- 3. 세면·위생 -->
+  <div class="checklist-section" id="section-hygiene">
+    <div class="checklist-section-header">
+      <span class="icon">🧴</span> 세면·위생
+    </div>
+    <div class="checklist-items">
+      <label class="checklist-item" data-key="hygiene-0">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">자외선 차단제 (SPF 50+ 권장 — 7월 자외선 강함)</span>
+      </label>
+      <label class="checklist-item" data-key="hygiene-1">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">모자 or 양산</span>
+      </label>
+      <label class="checklist-item" data-key="hygiene-2">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">개인 세면도구</span>
+      </label>
+      <label class="checklist-item" data-key="hygiene-3">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">상비약 (소화제·진통제·멀미약·밴드)</span>
+      </label>
+      <label class="checklist-item" data-key="hygiene-4">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">마스크 (예비용)</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- 4. 전자기기 -->
+  <div class="checklist-section" id="section-electronics">
+    <div class="checklist-section-header">
+      <span class="icon">🔋</span> 전자기기
+    </div>
+    <div class="checklist-items">
+      <label class="checklist-item" data-key="electronics-0">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">스마트폰 충전기 (전원)</span>
+      </label>
+      <label class="checklist-item" data-key="electronics-1">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">보조배터리</span>
+      </label>
+      <label class="checklist-item" data-key="electronics-2">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">이어폰</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- 5. 기타 -->
+  <div class="checklist-section" id="section-etc">
+    <div class="checklist-section-header">
+      <span class="icon">🎒</span> 기타
+    </div>
+    <div class="checklist-items">
+      <label class="checklist-item" data-key="etc-0">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">현금 (소규모 식당·시장 대비)</span>
+      </label>
+      <label class="checklist-item" data-key="etc-1">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">에코백 or 보조 가방 (시장 장보기)</span>
+      </label>
+      <label class="checklist-item" data-key="etc-2">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">멀티탭 (숙소 콘센트 부족 대비)</span>
+      </label>
+      <label class="checklist-item" data-key="etc-3">
+        <input type="checkbox" />
+        <div class="custom-checkbox"></div>
+        <span class="item-label">탄산온천 수건·수영복 (숙소 제공 여부 사전 확인)</span>
+      </label>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>2026 제주도 가족여행</span> · 빠진 거 없지? 🧳
+</footer>
+
+<script>
+  const STORAGE_KEY = 'jeju2026_checklist';
+
+  function getState() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; }
+  }
+
+  function saveState(state) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  }
+
+  function updateProgress() {
+    const items = document.querySelectorAll('.checklist-item');
+    const total = items.length;
+    const checked = document.querySelectorAll('.custom-checkbox.checked').length;
+    document.getElementById('progressCount').textContent = checked + ' / ' + total + ' 완료';
+    document.getElementById('progressFill').style.width = (total ? (checked / total * 100) : 0) + '%';
+  }
+
+  function applyState() {
+    const state = getState();
+    document.querySelectorAll('.checklist-item').forEach(item => {
+      const key = item.dataset.key;
+      const box = item.querySelector('.custom-checkbox');
+      const label = item.querySelector('.item-label');
+      const input = item.querySelector('input');
+      if (state[key]) {
+        box.classList.add('checked');
+        label.classList.add('checked');
+        input.checked = true;
+      } else {
+        box.classList.remove('checked');
+        label.classList.remove('checked');
+        input.checked = false;
+      }
+    });
+    updateProgress();
+  }
+
+  document.querySelectorAll('.checklist-item').forEach(item => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      const key = this.dataset.key;
+      const state = getState();
+      state[key] = !state[key];
+      saveState(state);
+      applyState();
+    });
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', function() {
+    if (confirm('모든 체크를 초기화할까요?')) {
+      localStorage.removeItem(STORAGE_KEY);
+      applyState();
+    }
+  });
+
+  applyState();
+</script>
+
+</body>
+</html>
