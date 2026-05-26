@@ -56,7 +56,7 @@ body {
 .nav-brand {
   font-weight: 700;
   color: var(--primary);
-  font-size: 14px;
+  font-size: 16px;
   padding: 14px 0;
   margin-right: auto;
   white-space: nowrap;
@@ -91,13 +91,14 @@ main {
   flex: 1;
   max-width: 640px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 0px 16px 16px 16px;
   width: 100%;
 }
 
 /* ─── Page Header ─── */
 .page-header {
   text-align: center;
+  margin-top: 32px;
   margin-bottom: 28px;
 }
 
@@ -123,13 +124,6 @@ main {
 }
 
 /* ─── Section Heading Row ─── */
-.section-heading-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 12px;
-  margin-top: 28px;
-}
 
 .section-heading-row:first-child { margin-top: 0; }
 
@@ -148,216 +142,6 @@ main {
   margin-left: 2px;
 }
 
-/* ─── Flight Summary Card ─── */
-.flight-summary-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  margin-bottom: 12px;
-}
-
-.fsc-title {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--primary-dark);
-  padding: 12px 16px 10px;
-  border-bottom: 1px solid var(--border);
-}
-
-.fsc-body {
-  display: flex;
-  flex-direction: column;
-  padding: 14px 16px;
-}
-
-.fsc-divider {
-  height: 1px;
-  background: var(--border);
-  margin: 10px 0;
-}
-
-.fsc-dir {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 10px;
-}
-
-.fsc-row { margin-bottom: 14px; }
-.fsc-row:last-child { margin-bottom: 0; }
-
-.fsc-row-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.fsc-route-label {
-  font-size: 12px;
-  color: var(--text-muted);
-  flex: 1;
-}
-
-.fsc-row-times {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  padding-left: 2px;
-}
-
-.fsc-time-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.fsc-time-label {
-  font-size: 10px;
-  color: var(--text-muted);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 2px;
-}
-
-.fsc-time-val {
-  font-size: 22px;
-  font-weight: 800;
-  color: var(--primary);
-  line-height: 1;
-}
-
-.fsc-time-arrow {
-  font-size: 16px;
-  color: var(--text-muted);
-  padding-bottom: 1px;
-}
-
-.fsc-team {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--primary-dark);
-  background: rgba(249, 115, 22, 0.12);
-  padding: 1px 6px;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
-.fsc-meta {
-  font-size: 11px;
-  color: var(--text-muted);
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-
-.flight-meta {
-  font-size: 11px;
-  color: var(--text-muted);
-  margin-top: 4px;
-  letter-spacing: 0.02em;
-}
-
-/* ─── Info Card (체크인/아웃, 렌터카 공통) ─── */
-.checkinout-card {
-  display: flex;
-  flex-direction: column;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  margin-bottom: 12px;
-}
-
-.checkinout-title {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--primary-dark);
-  padding: 12px 16px 8px;
-  border-bottom: 1px solid var(--border);
-}
-
-.checkinout-sub {
-  font-size: 12px;
-  color: var(--text-muted);
-  padding: 6px 16px 0;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 8px;
-}
-
-.checkinout-body {
-  display: flex;
-  align-items: center;
-}
-
-.checkinout-item {
-  flex: 1;
-  text-align: center;
-  padding: 12px 16px;
-}
-
-.checkinout-divider {
-  width: 1px;
-  height: 48px;
-  background: var(--border);
-}
-
-.checkinout-label {
-  font-size: 10px;
-  color: var(--text-muted);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-
-.checkinout-time {
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.checkinout-date {
-  font-size: 12px;
-  color: var(--text-muted);
-  margin-top: 2px;
-}
-
-/* ─── Summary Grid ─── */
-.summary-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.summary-item {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 14px 16px;
-  box-shadow: var(--shadow);
-}
-
-.summary-item .label {
-  font-size: 11px;
-  color: var(--text-muted);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 4px;
-}
-
-.summary-item .value {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text);
-  line-height: 1.4;
-}
 
 /* ─── Day Tabs ─── */
 .day-tabs {
@@ -365,7 +149,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
   margin: 0 -16px;
-  padding: 10px 16px 10px;
+  padding: 16px 16px;
   margin-bottom: 20px;
   position: sticky;
   top: var(--nav-h);
