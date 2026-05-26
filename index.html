@@ -60,8 +60,24 @@
     </div>
   </div>
 
+  <!-- 일차 탭 -->
+  <div class="day-tabs">
+    <button class="day-tab-btn active" data-day="1">
+      <span class="day-tab-num">DAY 1</span>
+      <span class="day-tab-sub">7/3 금</span>
+    </button>
+    <button class="day-tab-btn" data-day="2">
+      <span class="day-tab-num">DAY 2</span>
+      <span class="day-tab-sub">7/4 토</span>
+    </button>
+    <button class="day-tab-btn" data-day="3">
+      <span class="day-tab-num">DAY 3</span>
+      <span class="day-tab-sub">7/5 일</span>
+    </button>
+  </div>
+
   <!-- DAY 1 -->
-  <div class="day-section">
+  <div class="day-section" id="day-1">
     <div class="day-header">
       <span class="day-badge">DAY 1</span>
       <span class="day-title">출발 · 9.81파크</span>
@@ -156,7 +172,7 @@
   </div>
 
   <!-- DAY 2 -->
-  <div class="day-section">
+  <div class="day-section" id="day-2">
     <div class="day-header">
       <span class="day-badge">DAY 2</span>
       <span class="day-title">미술관 · 약천사 · 온천</span>
@@ -272,7 +288,7 @@
   </div>
 
   <!-- DAY 3 -->
-  <div class="day-section">
+  <div class="day-section" id="day-3">
     <div class="day-header">
       <span class="day-badge">DAY 3</span>
       <span class="day-title">산방굴사 · 귀가</span>
@@ -369,6 +385,20 @@
 <footer>
   <span>2026 제주도 가족여행</span> · 즐거운 여행 되세요! 🌺
 </footer>
+
+<script>
+  const tabs = document.querySelectorAll('.day-tab-btn');
+  const sections = document.querySelectorAll('.day-section');
+
+  function showDay(day) {
+    sections.forEach(s => s.style.display = s.id === 'day-' + day ? '' : 'none');
+    tabs.forEach(t => t.classList.toggle('active', t.dataset.day === day));
+  }
+
+  tabs.forEach(tab => tab.addEventListener('click', () => showDay(tab.dataset.day)));
+
+  showDay('1');
+</script>
 
 </body>
 </html>
