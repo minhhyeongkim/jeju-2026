@@ -1,18 +1,19 @@
 :root {
-  --primary: #1D9E75;
-  --primary-light: #E8F7F2;
-  --primary-dark: #157A5C;
-  --bg: #F8FAF9;
+  --primary: #F97316;
+  --primary-light: #FFF3E8;
+  --primary-dark: #C2560A;
+  --bg: #FDFAF7;
   --text: #1A1A1A;
   --text-muted: #6B7280;
-  --border: #E0EDE8;
+  --border: #EAE0D5;
   --warning-bg: #FFF8E6;
   --warning-border: #F5A623;
-  --optional-bg: #F0FAF6;
+  --optional-bg: #FFF8F2;
   --card-bg: #FFFFFF;
-  --shadow: 0 2px 8px rgba(29, 158, 117, 0.08);
+  --shadow: 0 2px 8px rgba(249, 115, 22, 0.08);
   --radius: 12px;
   --font: -apple-system, 'Apple SD Gothic Neo', 'Pretendard', 'Noto Sans KR', sans-serif;
+  --nav-h: 50px;
 }
 
 * {
@@ -71,7 +72,7 @@ body {
   color: var(--text-muted);
   font-size: 13px;
   font-weight: 500;
-  padding: 14px 12px;
+  padding: 15px 12px;
   transition: color 0.2s;
   white-space: nowrap;
 }
@@ -121,12 +122,158 @@ main {
   box-shadow: var(--shadow);
 }
 
+/* ─── Section Heading Row ─── */
+.section-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  margin-top: 28px;
+}
+
+.section-heading-row:first-child { margin-top: 0; }
+
+.section-heading-icon { font-size: 16px; }
+
+.section-heading-text {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.section-heading-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-left: 2px;
+}
+
+/* ─── Flight Summary Card ─── */
+.flight-summary-card {
+  background: var(--primary-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.fsc-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.fsc-body {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0;
+  align-items: center;
+}
+
+.fsc-section { flex: 1; }
+
+.fsc-divider {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+  margin: 0 14px;
+}
+
+.fsc-dir {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.fsc-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.fsc-team {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-dark);
+  background: rgba(29,158,117,0.12);
+  padding: 1px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.fsc-route {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.fsc-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.flight-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+}
+
+/* ─── Checkin/Out Card ─── */
+.checkinout-card {
+  display: flex;
+  align-items: center;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.checkinout-item {
+  flex: 1;
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.checkinout-divider {
+  width: 1px;
+  height: 48px;
+  background: var(--border);
+}
+
+.checkinout-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.checkinout-time {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.checkinout-date {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
 /* ─── Summary Grid ─── */
 .summary-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin-bottom: 28px;
+  margin-bottom: 12px;
 }
 
 .summary-item {
@@ -158,7 +305,21 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
+  margin: 0 -16px;
+  padding: 10px 16px 10px;
   margin-bottom: 20px;
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 90;
+  background: var(--bg);
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+  transition: box-shadow 0.25s, border-color 0.25s;
+}
+
+.day-tabs.is-sticky {
+  border-bottom-color: var(--border);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
 }
 
 .day-tab-btn {
@@ -447,7 +608,7 @@ main {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--primary), #2DD4A7);
+  background: linear-gradient(90deg, var(--primary), #FFB347);
   border-radius: 4px;
   transition: width 0.4s ease;
 }
